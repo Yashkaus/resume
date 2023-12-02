@@ -7,6 +7,45 @@ body {
     color: #333; /* Text color */
 }
 
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-links i {
+    font-size: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    .footer-links {
+        flex-wrap: wrap;
+    }
+
+    .footer-links a {
+        flex: 0 0 50%;
+        max-width: 50%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .footer-links i {
+        font-size: 30px;
+    }
+}
 header {
     text-align: center;
     padding: 20px;
@@ -34,15 +73,6 @@ section a:hover {
     text-decoration: underline;
 }
 
-footer {
-    background-color: #34495e;  /* Footer background color */
-    color: #ecf0f1; /* Footer text color */
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
 
 /* Animation */
 @keyframes fadeIn {
@@ -104,12 +134,6 @@ section {
     padding: 20px;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em;
-}
 
 h2 {
     color: #007bff; /* Blue color for headings */
