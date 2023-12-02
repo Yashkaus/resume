@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-sqZaC5Pbw1H2/1MUzyn8Xn5TRxeItZdP5acZdID8/dJ3QuAHoZuE+7VqJK6fR3mlt0TKdk0gfFkmYNdsXct/7w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+        }
+
+        header h1 {
+            margin: 10px 0;
+        }
+
+        header i {
+            font-size: 24px;
+            margin-right: 5px;
+        }
+
+        #typing-line {
+            font-style: italic;
+        }
+
+        section {
+            padding: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        section a {
+            color: #3498db;
+        }
+
+        section a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        section i {
+            font-size: 24px;
+            margin: 0 5px;
+            color: #3498db; /* Icon color */
+        }
+
+        /* Hover effect on icons */
+        section i:hover {
+            transform: scale(1.2);
+            transition: transform 0.3s ease;
+        }
+    </style>
+
+    <title>Yash Kaushik - Resume</title>
+</head>
+
+<body>
+    <header>
+        <img src="photo.png" alt="Profile Photo" class="profile-photo">
+        <h1><i class="fas fa-user"></i> Yash Kaushik</h1>
+        <p id="typing-line">Aspiring a challenging entry-level position in a progressive organization where I can utilize my skills in Java, C++, and database management while contributing to the growth of the company.</p>
+    </header>
+
+    <section id="contact">
+        <h2><i class="fas fa-address-book"></i> Contact Information</h2>
+        <!-- ... your existing contact content ... -->
+    </section>
+
+    <section id="education">
+        <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+        <!-- ... your existing education content ... -->
+    </section>
+
+    <section id="skills">
+        <h2><i class="fas fa-code"></i> Skills</h2>
+        <!-- ... your existing skills content ... -->
+    </section>
+
+    <section id="projects">
+        <h2><i class="fas fa-laptop-code"></i> Projects</h2>
+        <!-- ... your existing projects content ... -->
+    </section>
+
+    <section id="certificates">
+        <h2><i class="fas fa-certificate"></i> Certificates</h2>
+        <!-- ... your existing certificates content ... -->
+    </section>
+
+    <section id="interests">
+        <h2><i class="fas fa-heart"></i> Interests</h2>
+        <!-- ... your existing interests content ... -->
+    </section>
+
+    <section id="qualities">
+        <h2><i class="fas fa-check-circle"></i> Qualities</h2>
+        <!-- ... your existing qualities content ... -->
+    </section>
+
+    <section id="personal-details">
+        <h2><i class="fas fa-id-card"></i> Personal Details</h2>
+        <!-- ... your existing personal details content ... -->
+    </section>
+
+    <section>
+        <i class="fas fa-band-aid"></i>
+        <i class="fas fa-cat"></i>
+        <i class="fas fa-dragon"></i>
+        <i class="far fa-clock"></i>
+        <i class="fas fa-clock"></i>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <p>&copy; 2023 Yash Kaushik</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simulate typing effect
+        const typingLine = document.getElementById('typing-line');
+        const text = "Aspiring a challenging entry-level position in a progressive organization where I can utilize my skills in Java, C++, and database management while contributing to the growth of the company.";
+        let index = 0;
+
+        function type() {
+            typingLine.textContent = text.slice(0, index);
+            index++;
+
+            if (index > text.length) {
+                index = 0;
+            }
+
+            setTimeout(type, 50);
+        }
+
+        // Start the typing effect
+        type();
+    </script>
+</body>
+
+</html>
